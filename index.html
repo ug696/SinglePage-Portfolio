@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width,initial-scale=1" />
+ <title>UG's portfolio</title>
+ <meta name="description" content="個人一頁式簡歷範本，包含：Header、關於我、技能、經歷、作品集、聯絡方式。" />
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header class="site-header" id="home">
+   <div class="container header-inner">
+     <a class="brand" href="#home">謝宥祺</a>
+     <button class="nav-toggle" id="navToggle" aria-label="切換選單">
+       <span class="hamburger"></span>
+     </button>
+     <nav class="site-nav" id="siteNav">
+       <a href="#about">關於我</a>
+       <a href="#skills">技能</a>
+       <a href="#experience">經歷</a>
+       <a href="#portfolio">作品集</a>
+       <a href="#contact" class="cta">聯絡我</a>
+     </nav>
+   </div>
+
+
+   <div class="hero container">
+     <div class="hero-content">
+       <h1>你好，我是 <span class="accent">謝宥祺</span></h1>
+       <p class="lead">輔仁大學醫資學程一年級。熱於助人，好相處。</p>
+       <div class="hero-actions">
+         <a class="btn" href="#portfolio">查看作品</a>
+         <a class="btn ghost" href="#contact">聯絡我</a>
+       </div>
+     </div>
+     <div class="hero-avatar" aria-hidden="true">
+       <!-- 可替換成你的大頭照 -->
+       <img src="my-photo.jpg" alt="大頭貼" width="220" height="220" style="border-radius:18px;">
+      </div>
+   </div>
+ </header>
+
+
+ <main>
+   <section id="about" class="section container">
+     <h2 class="section-title">關於我</h2>
+     <div class="card about-card">
+       <p>
+         我是謝宥祺，今年18歲，正在學習coding。
+       </p>
+       <ul class="meta">
+         <li>location：台灣</li>
+         <li>email：414570148@m365.fju.hcc.edu.tw</li>
+         <li>phone：0966719070</li>
+       </ul>
+     </div>
+   </section>
+
+
+   <section id="skills" class="section container">
+     <h2 class="section-title">技能</h2>
+     <div class="skills-grid">
+       <div class="skill">
+         <div class="skill-head">
+           <span>HTML & CSS</span>
+           <span class="skill-percent" data-percent="95">0%</span>
+         </div>
+         <div class="skill-bar">
+           <div class="skill-fill" style="width:0%" data-target="95"></div>
+         </div>
+       </div>
+
+
+       <div class="skill">
+         <div class="skill-head">
+           <span>JavaScript</span>
+           <span class="skill-percent" data-percent="90">0%</span>
+         </div>
+         <div class="skill-bar">
+           <div class="skill-fill" style="width:0%" data-target="90"></div>
+         </div>
+       </div>
+
+
+       <div class="skill">
+         <div class="skill-head">
+           <span>React / Vue</span>
+           <span class="skill-percent" data-percent="85">0%</span>
+         </div>
+         <div class="skill-bar">
+           <div class="skill-fill" style="width:0%" data-target="85"></div>
+         </div>
+       </div>
+
+
+       <div class="skill">
+         <div class="skill-head">
+           <span>Node.js / Express</span>
+           <span class="skill-percent" data-percent="70">0%</span>
+         </div>
+         <div class="skill-bar">
+           <div class="skill-fill" style="width:0%" data-target="70"></div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+
+   <section id="experience" class="section container">
+     <h2 class="section-title">經歷</h2>
+     <ol class="timeline">
+       <li>
+         <h3>公司 A — 前端工程師</h3>
+         <time>2022 - 現在</time>
+         <p>負責主要產品的前端開發，導入元件化設計與效能優化，提升首屏載入速度 30%。</p>
+       </li>
+       <li>
+         <h3>公司 B — UI 工程師</h3>
+         <time>2020 - 2022</time>
+         <p>與設計團隊密切合作，實作高保真互動並建立設計系統。主導跨瀏覽器相容性修正。</p>
+       </li>
+       <li>
+         <h3>自由接案 / 個人專案</h3>
+         <time>2018 - 2020</time>
+         <p>完成多個中小型網站，技術棧包含靜態網站、RWD 與簡單後端整合。</p>
+       </li>
+     </ol>
+   </section>
+
+
+   <section id="portfolio" class="section container">
+     <h2 class="section-title">作品集</h2>
+     <div class="projects-grid">
+       <article class="project-card">
+         <div class="project-thumb" aria-hidden="true">
+           <!-- 置換成真實圖片或縮圖 -->
+           <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="180" fill="#F3F6FA"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#9FB3D6" font-size="20">專案一縮圖</text></svg>
+         </div>
+         <h3>專案一：作品名稱</h3>
+         <p>技術：React / Netlify / API 整合。簡短說明專案目的與亮點。</p>
+         <a class="btn-sm" href="#" target="_blank" rel="noopener">查看詳情</a>
+       </article>
+
+
+       <article class="project-card">
+         <div class="project-thumb" aria-hidden="true">
+           <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="180" fill="#F3F6FA"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#9FB3D6" font-size="20">專案二縮圖</text></svg>
+         </div>
+         <h3>專案二：作品名稱</h3>
+         <p>技術：Vue / Firebase。簡短說明專案特色與使用情境。</p>
+         <a class="btn-sm" href="#" target="_blank" rel="noopener">查看詳情</a>
+       </article>
+
+
+       <article class="project-card">
+         <div class="project-thumb" aria-hidden="true">
+           <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="180" fill="#F3F6FA"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#9FB3D6" font-size="20">專案三縮圖</text></svg>
+         </div>
+         <h3>專案三：作品名稱</h3>
+         <p>技術：HTML/CSS/JS。簡短說明你在專案中擔任的角色與貢獻。</p>
+         <a class="btn-sm" href="#" target="_blank" rel="noopener">查看詳情</a>
+       </article>
+     </div>
+   </section>
+
+
+   <section id="contact" class="section container">
+     <h2 class="section-title">聯絡方式</h2>
+     <div class="contact-grid">
+       <div class="contact-info card">
+         <h3>想談合作或工作機會？</h3>
+         <p>歡迎寄信或在下方填寫簡短訊息，我會在 3 個工作天內回覆。</p>
+         <ul class="contact-list">
+           <li><strong>Email</strong>: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+           <li><strong>電話</strong>: 09xx-xxx-xxx</li>
+           <li><strong>LinkedIn</strong>: <a href="#" target="_blank" rel="noopener">你的 LinkedIn</a></li>
+         </ul>
+       </div>
+
+
+       <form id="contactForm" class="contact-form card" aria-label="聯絡表單">
+         <label>
+           名稱
+           <input type="text" name="name" required placeholder="你的名字" />
+         </label>
+         <label>
+           電郵
+           <input type="email" name="email" required placeholder="youremail@example.com" />
+         </label>
+         <label>
+           訊息
+           <textarea name="message" rows="6" required placeholder="簡單描述你的需求"></textarea>
+         </label>
+         <div class="form-actions">
+           <button type="submit" class="btn">傳送訊息</button>
+           <button type="reset" class="btn ghost">重設</button>
+         </div>
+         <p class="form-note" id="formNote" aria-live="polite"></p>
+       </form>
+     </div>
+   </section>
+ </main>
+
+
+ <footer class="site-footer">
+   <div class="container footer-inner">
+     <p>© <span id="year"></span> 你的名字 — All rights reserved.</p>
+     <nav class="footer-nav">
+       <a href="#home">回到頂部</a>
+       <a href="#contact">聯絡我</a>
+     </nav>
+   </div>
+ </footer>
+
+
+ <script src="script.js"></script>
+</body>
+</html>
