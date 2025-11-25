@@ -112,3 +112,23 @@
     .projects-grid .project-card .project-thumb{height:120px}
     .hero h1{font-size:1.5rem}
   }
+  .skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skills-tags .tag {
+    background-color: #f3f6fa;
+    color: #4a4a4a;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    transition: transform 0.2s, background-color 0.2s;
+    cursor: default;
+  }
+  
+  .skills-tags .tag:hover {
+    transform: scale(1.1);
+    background-color: #d0e6ff;
+  }
