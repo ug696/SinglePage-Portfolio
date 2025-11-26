@@ -60,8 +60,18 @@
   /* Cards */
   .card{background:white;border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
   .about-card p{margin:0 0 12px}
-  .meta{list-style:none;padding:0;margin:0;display:flex;gap:16px;color:var(--muted);flex-wrap:wrap}
+  .meta {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--muted);
+  }
   
+  .meta li {
+    display: block;   /* 每個 li 占一行 */
+    margin-bottom: 6px; /* 行距，可調整 */
+  }
+    
   /* Skills */
   .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
   .skill{display:flex;flex-direction:column;gap:8px}
@@ -76,10 +86,20 @@
   .timeline time{display:block;color:var(--muted);font-size:0.9rem;margin-bottom:6px}
   
   /* Projects */
-  .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  .project-card{background:white;border-radius:12px;padding:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
-  .project-thumb{height:140px;border-radius:8px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#f7fbff}
-  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 垂直排列，每個作品佔一整行 */
+    gap: 16px; /* 作品之間的間距 */
+  }
+    .project-card{background:white;border-radius:12px;padding:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
+    .project-thumb {
+        display: inline-block;   /* 讓外框大小跟著內容走 */
+        padding: 10px;           /* 背景留邊框 */
+        background: #f7fbff;     /* 背景顏色 */
+        border-radius: 8px;
+      }
+      
+        
   /* Contact */
   .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   .contact-info h3{margin-top:0}
@@ -111,4 +131,9 @@
     .projects-grid{grid-template-columns:1fr}
     .projects-grid .project-card .project-thumb{height:120px}
     .hero h1{font-size:1.5rem}
+  }
+  .name {
+    font-size: 3em;  /* 想更大可以改成 4em、5em */
+    font-weight: bold;
+    margin-left: 0.3em; /* 讓字跟英文有點間距（可選） */
   }

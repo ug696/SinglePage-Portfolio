@@ -5,38 +5,40 @@
  <meta name="viewport" content="width=device-width,initial-scale=1" />
  <title>UG's portfolio</title>
  <meta name="description" content="個人一頁式簡歷範本，包含：Header、關於我、技能、經歷、作品集、聯絡方式。" />
- <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <header class="site-header" id="home">
-   <div class="container header-inner">
-       <span class="hamburger"></span>
-     </button>
-     <nav class="site-nav" id="siteNav">
-       <a href="#about">關於我</a>
-       <a href="#skills">技能</a>
-       <a href="#experience">經歷</a>
-       <a href="#portfolio">作品集</a>
-       <a href="#contact" class="cta">聯絡我</a>
-     </nav>
-   </div>
-
-
-   <div class="hero container">
-     <div class="hero-content">
-       <h1>謝宥祺</h1>
-       <p class="lead">輔仁大學醫資學程一年級。熱於助人，好相處。</p>
-       <div class="hero-actions">
-         <a class="btn" href="#portfolio">查看作品</a>
-         <a class="btn ghost" href="#contact">聯絡我</a>
-       </div>
-     </div>
-     <div class="hero-avatar" aria-hidden="true">
-       <!-- 可替換成你的大頭照 -->
-       <img src="my photo.jpg" alt="大頭貼" width="220" height="220" style="border-radius:18px;">
-      </div>
-   </div>
- </header>
+    <header class="site-header" id="home">
+        <div class="container header-inner">
+          <!-- 漢堡選單按鈕 -->
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+          </button>
+      
+          <!-- 導航選單 -->
+          <nav class="site-nav" id="siteNav">
+            <a href="#about">About me</a>
+            <a href="#skills">技能</a>
+            <a href="#experience">經歷</a>
+            <a href="#portfolio">作品集</a>
+            <a href="#contact" class="cta">聯絡我</a>
+          </nav>
+        </div>
+      
+        <!-- Hero 區塊 -->
+        <div class="hero container">
+          <div class="hero-content">
+            <h2>This is <span class="name">謝宥祺</span></h2>
+            <p class="lead">輔仁大學醫資學程一年級。熱於助人，好相處。</p>
+            
+          </div>
+      
+          <div class="hero-avatar" aria-hidden="true">
+            <img src="my photo.jpg" alt="大頭貼" width="250" height="250" style="border-radius:18px;">
+          </div>
+        </div>
+      </header>
+      
 
 
  <main>
@@ -48,9 +50,6 @@
              <li>email：414570148@m365.fju.hcc.edu.tw</li>
              <li>phone：0966719070</li>
         </ul>
-         <p>
-          我是謝宥祺，今年18歲，正在學習coding。
-        </p>
         </div>
    </section>
 
@@ -131,7 +130,7 @@
         <p>簡介：此作品為高中程式設計應用課程的作品，發想來源為無網路恐龍遊戲。</p>
         <p>角色分工：負責硬體製作及接線部分，並確保程式是否能正確執行。</p>
         <div class="project-thumb">
-          <img src="dino-game.png"   width="700" height="400" alt="小恐龍遊戲圖片">
+          <img src="dino-game.png"   width="800" height="500" alt="小恐龍遊戲圖片">
         </div>
         <a class="btn-sm" href="https://wokwi.com/projects/425766055822276609" target="_blank">點擊前往wokwi查看完整程式碼 </a>
       </article>
@@ -141,16 +140,16 @@
         <p>簡介：此作品為高一時生科課程所創作的收納盒。</p>
         <p>加工方式：使用Rhino 3D 建模與雷射切割實作</p>
         <div class="project-thumb">
-          <img src="box.png" alt="收納合照片" width="700" height="400">
+          <img src="box.png" alt="收納合照片" width="800" height="500" alt="收納盒3d圖">
         </div>
       </article>
   
       <article class="project-card">
-        <h3>作品三：學會kickflip</h3>
+        <h3>作品三：kickflip</h3>
         <p>簡介：這算是我給自己在滑板社的一個小目標。</p>
         <p>過程：在執行的過程中當然經歷過很多失敗和受過蠻嚴重的傷，但至少我學會如何堅持不懈。</p>
         <div class="project-thumb">
-          <video autoplay muted loop src="kickflip.mov" alt="kickflip影片" width="200" height="400" controls></video>
+          <video autoplay muted loop src="kickflip.mov" alt="kickflip影片" width="300" height="400" controls></video>
         </div>
       </article>
   
@@ -166,26 +165,29 @@
          <h3>有任何問題皆可提出</h3>
          <p>歡迎寄信或在下方並按照指示填寫簡短訊息，我會盡量在 3 個工作天內回覆。</p>
          <ul class="contact-list">
-             <li><strong>姓名：</strong></li>
+             <li><strong>姓名：</strong>你的名字</li>
              <li><strong>Email</strong>: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
              <li><strong>電話</strong>: 09xx-xxx-xxx</li>
-             <li><strong>主旨：</strong></li>
-             <li><strong>內文：</strong></li>
+             <li><strong>訊息：</strong>：簡單描述你的要求</li>
          </ul>
        </div>
 
 
        <form id="contactForm" class="contact-form card" aria-label="聯絡表單">
          <label>
-           名稱
+           姓名：
            <input type="text" name="name" required placeholder="你的名字" />
          </label>
          <label>
-           電郵
+           Email：
            <input type="email" name="email" required placeholder="youremail@example.com" />
          </label>
          <label>
-           訊息
+           電話：
+           <input type="phonenum" name="phonenum" required placeholder="09xx-xxx-xxx" />
+         </label>
+         <label>
+           訊息：
            <textarea name="message" rows="6" required placeholder="簡單描述你的需求"></textarea>
          </label>
          <div class="form-actions">
@@ -201,7 +203,7 @@
 
  <footer class="site-footer">
    <div class="container footer-inner">
-     <p>© <span id="year"></span> 你的名字 — All rights reserved.</p>
+     <p>© <span id="year"></span> Ugtheboy</p>
      <nav class="footer-nav">
        <a href="#home">回到頂部</a>
        <a href="#contact">聯絡我</a>
