@@ -1,0 +1,32 @@
+[
+  {
+    "topic": "Git",
+    "title": "版本控制",
+    "body": "用 git status 檢查變更，git add 暫存內容，再用 git commit 建立快照。"
+  },
+  {
+    "topic": "HTML5",
+    "title": "語意化結構",
+    "body": "用 header、nav、main、section 與 footer 組織個人網頁，讓內容層次清楚。"
+  },
+  {
+    "topic": "CSS",
+    "title": "響應式版面",
+    "body": "用 CSS Grid 排列卡片，搭配 media query 在窄螢幕改為單欄。"
+  },
+  {
+    "topic": "JSON",
+    "title": "資料與畫面分開",
+    "body": "本區文字存放在 notes.json，使用陣列與物件整理主題、標題與內容。"
+  },
+  {
+    "topic": "Ajax",
+    "title": "不重整頁面載入資料",
+    "body": "按下按鈕後，用 $.getJSON 讀取同源 JSON，成功後更新卡片，失敗時顯示提示。"
+  },
+  {
+    "topic": "jQuery",
+    "title": "選取元素與事件",
+    "body": "使用 .on 綁定事件、.toggleClass 切換主題，使用 .text 安全顯示資料。"
+  }
+]
